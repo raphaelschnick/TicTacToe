@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: white;
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+}
+
+.container{
+    background-color: black;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.title{
+    text-align: center;
+}
+
+.title span{
+    color: purple;
+}
+
+.status-action{
+    display: flex;
+    margin-top: 25px;
+    font-size: 25px;
+    justify-content: space-around;
+}
+
+.reset {
+    cursor: pointer;
+    transition-property: all;
+    transition: 50s;
+}
+
+.reset:hover{
+    color: purple;
+    transition: ease-in-out 50s;
+}
+
+.game-grid{
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin-top: 50px;
+}
+
+.X,
+.O {
+    cursor: default;
+}
+
+.X::after {
+    content: 'X';
+    font-size: 200px;
+}
+
+.O::after {
+    content: 'O';
+    color: #F2EBD3;
+    font-size: 225px;
+}
+
+.won::after {
+    color: #BD022F;
+}
+
+@media only screen and (max-width: 1024px) {
+    .game-grid {
+        margin-top: 25px;
+        grid-gap: 10px;
+    }
+}
+
+.game-cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+}
+
+.X::after{
+    content: 'X';
+    animation: fadeIn ease 2s;
+    font-size: 200px;
+}
+
+.O::after{
+    content: 'O';
+    animation: fadeIn ease 2s;
+    font-size: 200px;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@media only screen and (max-width: 540px) {
+    .container {
+        margin: 25px;
+        padding: 25px;
+    }
+
+    .game-cell {
+        height: 100px;
+        width: 100px;
+    }
+
+    .X::after {
+        font-size: 100px;
+    }
+
+    .O::after {
+        font-size: 125px;
+    }
+}
+
+
