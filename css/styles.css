@@ -53,6 +53,33 @@ body{
     margin-top: 50px;
 }
 
+.X,
+.O {
+    cursor: default;
+}
+
+.X::after {
+    content: 'X';
+    font-size: 200px;
+}
+
+.O::after {
+    content: 'O';
+    color: #F2EBD3;
+    font-size: 225px;
+}
+
+.won::after {
+    color: #BD022F;
+}
+
+@media only screen and (max-width: 1024px) {
+    .game-grid {
+        margin-top: 25px;
+        grid-gap: 10px;
+    }
+}
+
 .game-cell{
     display: flex;
     justify-content: center;
@@ -63,20 +90,40 @@ body{
     background-color: black;
 }
 
-.x::after{
-    content: 'x';
-    animation: fadeIn ease 50s;
+.X::after{
+    content: 'X';
+    animation: fadeIn ease 2s;
     font-size: 200px;
 }
 
-.o::after{
-    content: 'o';
-    animation: fadeIn ease 50s;
+.O::after{
+    content: 'O';
+    animation: fadeIn ease 2s;
     font-size: 200px;
 }
 @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
+}
+
+@media only screen and (max-width: 540px) {
+    .container {
+        margin: 25px;
+        padding: 25px;
+    }
+
+    .game-cell {
+        height: 100px;
+        width: 100px;
+    }
+
+    .X::after {
+        font-size: 100px;
+    }
+
+    .O::after {
+        font-size: 125px;
+    }
 }
 
 
