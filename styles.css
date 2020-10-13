@@ -61,11 +61,13 @@ body.dark-theme{
 .X::after {
     content: 'X';
     font-size: 200px;
+    animation: fadeIn ease 1s;
 }
 
 .O::after {
     content: 'O';
     font-size: 225px;
+    animation: fadeIn ease 1s;
 }
 
 .won::after {
@@ -91,13 +93,13 @@ body.dark-theme{
 
 .X::after{
     content: 'X';
-    animation: fadeIn ease 2s;
+    animation: fadeIn ease 1s;
     font-size: 200px;
 }
 
 .O::after{
     content: 'O';
-    animation: fadeIn ease 2s;
+    animation: fadeIn ease 1s;
     font-size: 200px;
 }
 @keyframes fadeIn {
@@ -237,6 +239,33 @@ body.dark-theme{
   
   .slider.round:before {
     border-radius: 50%;
+  }
+
+  .highscore{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .first-place{
+    flex: 2;
+    order: 2;
+    font-size: 50px;
+  }
+
+  .first-place img{
+      flex: 1;
+      order: 1;
+  }
+
+  .second-place{
+    flex: 1;
+    order: 4;
+    font-size: 50px;
+  }
+
+  .second-place img{
+      flex: 1;
+      order: 3;
   }
 
 
