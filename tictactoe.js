@@ -2,10 +2,15 @@
 const statusDiv = document.querySelector('.status');
 const resetDiv = document.querySelector('.reset');
 const cellDivs = document.querySelectorAll('.game-cell');
+const xScore_element = document.querySelector('.xScore');
+const oScore_element = document.querySelector('.oScore');
 
 // game constants
 const xSymbol = 'X';
 const oSymbol = 'O';
+
+let xScore = 0;
+let oScore = 0;
 
 // game variables
 let gameIsLive = true;
@@ -18,8 +23,15 @@ const handleWin = (letter) => {
     gameIsLive = false;
     if (letter === 'X') {
         statusDiv.innerHTML = `${xSymbol} hat gewonnen!`;
+        xScore++;
+        xScore_element.innerHTML = `Player X: &nbsp;  <span>${xScore}</span>`;
+        oScore_element.innerHTML = `Player O: &nbsp;  <span>${oScore}</span>`;
     } else {
         statusDiv.innerHTML = `<span>${oSymbol} hat gewonnen!</span>`;
+        oScore++;
+        xScore_element.innerHTML = `Player X: &nbsp;  <span>${xScore}</span>`;
+        oScore_element.innerHTML = `Player O: &nbsp;  <span>${oScore}</span>`;
+        
     }
 };
 
@@ -124,3 +136,12 @@ resetDiv.addEventListener('click', handleReset);
 for (const cellDiv of cellDivs) {
     cellDiv.addEventListener('click', handleCellClick)
 }
+
+// Dark Theme
+const grid = document.querySelector('.game-grid');
+const btn = document.querySelector('.btn-dark');
+
+btn.addEventListener("click", function () {
+    document.body.classList.toggle('dark-theme');  
+    grid.classList.toggle('dark-theme');
+  });

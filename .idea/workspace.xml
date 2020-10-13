@@ -28,6 +28,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lebenslauf" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -37,6 +38,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projekte\Sybit\1. LJ\HTML\TicTacToe" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -45,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602483664299</updated>
-      <workItem from="1602483665349" duration="13740000" />
+      <workItem from="1602483665349" duration="15101000" />
     </task>
     <servers />
   </component>
@@ -53,6 +59,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="740" y="335" key="FileChooserDialogImpl" timestamp="1602510396832">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="740" y="335" key="FileChooserDialogImpl/-1920.893.1536.832/1920.14.1920.1160/0.0.1920.1160@0.0.1920.1160" timestamp="1602510396832" />
     <state x="2227" y="-9" width="1424" height="1147" maximized="true" key="dock-window-1" timestamp="1602487129465">
       <screen x="1920" y="14" width="1920" height="1160" />
     </state>
