@@ -12,7 +12,7 @@ const oSymbol = 'O';
 
 let xScore = 0;
 let oScore = 0;
-
+let switchButton = false;
 // game variables
 let gameIsLive = true;
 let xIsNext = true;
@@ -139,10 +139,27 @@ for (const cellDiv of cellDivs) {
 }
 
 // Dark Theme
-const grid = document.querySelector('.game-grid');
-const btn = document.querySelector('.btn-dark');
-
-btn.addEventListener("click", function () {
+function darkTheme() {
     document.body.classList.toggle('dark-theme');  
-    grid.classList.toggle('dark-theme');
-  });
+    document.body.classList.toggle('light-theme');
+};
+
+// Bot
+
+
+function bot() {
+    var bot = document.getElementById('bot');
+    var title = document.getElementById('title');
+    bot.classList.toggle('aus');
+    bot.classList.toggle('an');
+    title.classList.toggle('an');
+    title.classList.toggle('aus');
+
+    if(!switchButton) {
+    bot.innerHTML = "Bot an";
+    switchButton = true;
+    } else { 
+    bot.innerHTML = "Bot aus";
+    switchButton = false;
+    }
+};

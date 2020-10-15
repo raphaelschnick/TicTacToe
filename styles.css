@@ -28,8 +28,12 @@ body.dark-theme{
     text-align: center;
 }
 
-.title span{
-    color: purple;
+.title span.aus{
+    color: rgb(250, 129, 92);
+}
+
+.title span.an{
+    color: rgb(211, 250, 153);
 }
 
 .status-action{
@@ -62,16 +66,18 @@ body.dark-theme{
     content: 'X';
     font-size: 200px;
     animation: fadeIn ease 1s;
+    color: blue;
 }
 
 .O::after {
     content: 'O';
     font-size: 225px;
     animation: fadeIn ease 1s;
+    color: red;
 }
 
 .won::after {
-    color: #BD022F;
+    color: rgb(211, 250, 153);
 }
 
 @media only screen and (max-width: 1024px) {
@@ -267,5 +273,25 @@ body.dark-theme{
       flex: 1;
       order: 3;
   }
+
+  #bot{
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+#bot.an{
+    content: 'Bot an';
+    background-color: rgb(211, 250, 153);
+    color: black;
+}
+#bot.aus{
+    place-content: 'Bot aus';
+    background-color: rgb(250, 129, 92);
+    color: white;
+}
 
 

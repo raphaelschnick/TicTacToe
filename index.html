@@ -9,28 +9,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <title>Tic Tac Toe</title>
 </head>
-<body class="dark-theme || light-theme">
+<body class="dark-theme">
 <div class="container_flex">
         <div class="settings">
             <h1>Einstellungen</h1><br><br>
             <h2>Dark Theme</h2><br>
             <label class="switch" id="switch">
-                <input type="checkbox" checked>
+                <input type="checkbox" checked onclick="darkTheme()">
                 <span class="slider round"></span>
             </label>
             <br><br>
-            <button class="btn-dark">Dark Theme</button>
-            <br><br>
             <h2>Bot</h2><br>
-            <label class="switch" id="switch">
-                <input type="checkbox" checked>
+            <label class="switch" id="switch_bot">
+                <input type="checkbox" onclick="bot()">
                 <span class="slider round"></span>
-            </label><br><br>
+            </label>
+            <div id="bot" class="aus">Bot aus</div>
+            <br><br>
             <h2>Spiel zurücksetzen</h2><br>
             <button class="reset">Zurücksetzen</button>
         </div>
             <div class="container">
-                <h1 class="title">Tic <span>Tac</span> Hoe</h1>
+                <h1 class="title">Tic <span id="title" class="aus">Tac</span> Toe</h1>
                 <div class="status-action">
                     <div class="status">Spieler: X</div>
                 </div>
@@ -51,12 +51,6 @@
         <h2><div class="xScore">Player X: &nbsp; <span>0</span></div></h2><br>
         <h2><div class="oScore">Player O: &nbsp; <span>0</span></div></h2><br>
         <br><br><br>
-        <center><h2>Highscore</h2></center>
-        <img src="images/1.place.png" height="120" width="120">
-        <div class="first-place">Player X</div>
-        <br><br>
-        <img src="images/2.place.png" height="120" width="120">
-        <div class="second-place">Player O</div>
     </div>
 </div>
 <script src="tictactoe.js"></script>
