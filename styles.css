@@ -131,6 +131,10 @@ body.dark-theme{
     .O::after {
         font-size: 125px;
     }
+    #bot{
+        margin-left: 120px;
+        margin-right: 120px;
+    }
 }
 
 .container_flex{
@@ -275,11 +279,11 @@ body.dark-theme{
   }
 
   #bot{
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
-    padding: 15px;
-    margin-left: 120px;
-    margin-right: 120px;
+    padding: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
     margin-top: 20px;
     border-radius: 8px;
 }
